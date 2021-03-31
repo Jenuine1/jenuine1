@@ -1,0 +1,427 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.item1 { grid-area: header; }
+.item3 { grid-area: main; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid:
+  'header header header header header header'
+  'main main main main main main'
+  'footer footer footer footer footer footer';
+  background-color: #2196F3;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+ 
+}
+.item1{
+width: 100%;
+height: 690px;
+background-color:  #f2ae54;
+}
+.item3{
+    width: 100%;
+height: 1000px;
+background-color: rgb(255, 255, 255);
+}
+.item5{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(24, 24, 24);
+}
+#nav{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#navorta::after{
+    top: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    background-color: #000000;
+    z-index: 0;
+    opacity: 0.5;
+}
+#navorta{
+    display: flex;
+    width: 75%;
+    height: 100%;
+    margin-left: auto;
+    margin-right:auto;
+    justify-content: space-between;
+
+}
+#logodiv{
+    width: 170px;
+    height: 100%;
+    z-index: 2;
+}
+#logodiv > img{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+#navlinks{
+width: 500px;
+height: 100%;
+z-index: 2;
+}
+#navlinks>ul{
+display: flex;
+list-style: none;
+padding: 25px;
+height: 100%;
+z-index: 2;
+
+}
+#navlinks>ul>li{
+    padding: 7px;
+    z-index: 2;
+
+}
+#navlinks>ul>li>a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    z-index: 2;
+
+} 
+#navlinks>ul>li>a:hover{
+    color: rgb(73, 240, 73);
+}
+#pp{
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background-color: white;
+}
+#ayrac{
+    padding-right: 10px;
+    border-right: 1px solid white;
+}
+#profil{
+text-align: start;
+width:70px;
+height: 50px;
+
+}
+#dropdownicon{
+    transition: transform 0.5s ease;
+}
+#profil:hover #dropdown{
+    display: block;
+}
+#profil:hover #dropdownicon{
+    transform: rotate(180deg);
+}
+#dropdown{
+    position: absolute;
+    display:none;
+    width: 150px;
+    height: 90px;
+    background-color: white;
+    border-radius: 7px;
+}
+#dropdown > li{
+    text-align: left;
+    margin-left:10px;
+    list-style-type: none;
+}
+#dropdown > li > a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+#dropdown > li > a:hover{
+    color: green !important;
+}
+#topcontent{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#topincontent{
+    width: 100%;
+    height: 20%;
+position: relative;
+top: 50%;
+font-size: 70px;
+color: white;
+} 
+#topincontent > div {
+    z-index: 1;
+}
+#denemebuton{
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    border-radius: 60px;
+    margin-top: 100px;
+    font-size: 20px;
+    border:none;
+    background-color: rgb(22, 168, 22);
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    transition: background-color 0.5s ease;
+}
+#denemebuton:hover{
+    background-color: green;
+    cursor: pointer;
+}
+#headermain{
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#headermain > h2{
+font-size: 20px;
+margin-top: 20px;
+font-family: 'Roboto', sans-serif;
+font-weight: 100;
+}
+#webplayerbtn{
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    border-radius: 60px;
+    margin-top: 20px;
+    font-size: 20px;
+    border:2px solid grey;
+    background-color:transparent;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    transition: background-color 0.5s ease;
+    color: grey;
+}
+#webplayerbtn:hover{
+    cursor: pointer;
+    color: white;
+    background: grey;
+}
+.flex-container{
+    display: flex;
+    width: 80%;
+    min-height: 75%;
+    max-height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item{
+    position: relative;
+width: 282px;
+height: 350px;
+margin: 10px;
+    background-color: blue;
+ flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0px 0px 52px -18px rgba(0,0,0,1);
+}
+#flex1{
+    background-image: url("https://cdn.discordapp.com/attachments/655335422146379789/826820317984063558/il_570xN.png");
+    background-size: cover;
+    background-position: 0;
+
+}
+#flex2{
+    background-image: url("https://cdn.discordapp.com/attachments/655335422146379789/826820513355530240/Thank_U2C_Next_albC3BCm_kapaC49FC4B1.png");
+    background-size: cover;
+    background-position: 0;
+}
+#flex3{
+    background-image: url("https://cdn.discordapp.com/attachments/655335422146379789/826821001043640330/d5c4df32d826449771e85b83e3d4831d.png");
+    background-size: cover;
+    background-position: 0;
+
+}
+#flex4{
+    background-image: url("https://cdn.discordapp.com/attachments/655335422146379789/826821145801130044/875c14dafd39ab9a2b5087c1346024c9.png");
+    background-size: cover;
+    background-position: 0;
+}
+  .albumname{
+      color: white;
+      font-size: 26px;
+      position: relative;
+      top: 200px;
+      z-index: 5;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+  }
+.flex-item::after{
+    content: '';
+    position:absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.flex-item:hover::after{
+    opacity: 0.7;
+}
+.flex-item:hover .albumname{
+    opacity: 1;
+}
+.flex-item:hover .playnow{
+    opacity: 1;
+}
+.playnow{
+    color: white;
+    font-size: 26px;
+    position: relative;
+    top: 210px;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+color: rgb(33, 190, 33);
+display: inline;
+transition: color 0.5s ease;
+}
+.playnow:hover{
+    cursor: pointer;
+    color: rgb(21, 119, 21);
+    
+}
+#footerin{
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footerlogo > img{
+    width: 250px;
+    height: auto;
+}
+#sirket > ul{
+list-style: none;
+text-align: left;
+}
+#sirket > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+ul {
+    list-style: none;
+}
+#footerlogo{
+    min-width: 200px;
+    margin-right: 100px;
+    width: 20%;
+}
+#sirket{
+    min-width: 200px;
+    width: 20%;
+}
+#topluluklar{
+    min-width: 200px;
+    width: 20%;
+}
+#baglantılar{
+    min-width: 200px;
+    width: 20%;
+}
+#sosyalmedya{
+    min-width: 200px;
+    margin-left: 100px;
+    width: 20%;
+}
+#sosyalmedya > ul {
+    display: flex;
+}
+#sosyalmedya > ul > li > a{
+    letter-spacing: 50px;
+    font-size: 40px !important;
+}
+#jenuine{
+    display: block;
+    font-size: 16px;
+    text-align: right;
+    color: white;
+}
+#footeralt{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#lastfooter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#lastfooter > div > ul{
+    display: flex;
+}
+#lastfooter > div > ul > li{
+padding: 10px;
+}
+#lastfooter > div > ul > li > a{
+    font-size:12px;
+}
+#spotifyab{
+    padding: 10px;
+    color: white;
+    font-size:12px;
+    position: relative;
+}
+
+.selected{
+    color: grey !important;
+}
+#footerin > #sirket > ul > li >a{
+    transition: color 0.5s ease;
+    }
+#footerin > #sirket > ul > li >a:hover{
+color: rgb(42, 202, 42);
+}
+#footerin > #topluluklar > ul > li >a{
+    transition: color 0.5s ease;
+    }
+#footerin > #topluluklar > ul > li >a:hover{
+color: rgb(42, 202, 42);
+}
+#footerin > #baglantılar > ul > li >a{
+    transition: color 0.5s ease;
+    }
+#footerin > #baglantılar > ul > li >a:hover{
+color: rgb(42, 202, 42);
+}
+#lastfooter > div > ul > li > a {
+    transition: color 0.5s ease;
+}
+#lastfooter > div > ul > li >a:hover{
+    color: rgb(42, 202, 42);
+    }
