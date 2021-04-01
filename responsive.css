@@ -49,3 +49,163 @@
     margin-left:0;
 }
           }
+
+          @media screen and (max-width:500px){
+
+            #logodiv{
+                display:none;
+            }
+        
+        
+            #topcontent{
+               width: 100%;
+                height: 100%;
+                margin: 0;
+              }
+              .item1{
+                width: 100%;
+                height: 690px;
+                background-color:  #f2ae54;
+                margin: 0;
+                }
+                #headermain{
+                    width: 100%;
+                    height: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .flex-container{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    margin-top: 20px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                #footerlogo > img{
+                    width: 100px;
+                    height: auto;
+                }
+                #footerlogo{
+                    width: fit-content;
+                    height: fit-content;
+                    margin-right: 0;
+                    min-width: 130px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                #sirket{
+                    min-width: 200px;
+                    width: 100%;
+                    display: block;
+                }
+                #topluluklar{
+                    min-width: 200px;
+                    width: 100%;
+                    display: block;
+                    text-align: left;
+                    margin-top: 30px;
+                    margin-top: 30px;
+                    border-top: 2px solid rgb(41, 40, 40);
+                }
+                #baglantılar{
+                    min-width: 200px;
+                    width: 100%;
+                    display: block;
+                    text-align: left;
+                    margin-top: 30px;
+                    border-top: 2px solid rgb(41, 40, 40);
+                }
+                #sosyalmedya{
+                    min-width: 200px;
+                    margin-left: 0;
+                    width: 20%;
+                    display: block;
+                }
+                #footerin{
+                    display: block;
+                    width: 100%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .item5{
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(24, 24, 24);
+                }
+                .flex-item{
+                    position: relative;
+                width: 250;
+                height: 300px;
+                    background-color: blue;
+                 flex-wrap: wrap;
+                    flex-direction: column;
+                    box-shadow: 0px 0px 52px -18px rgba(0,0,0,1);
+                }
+                #flex2{
+                    position: relative;
+                    bottom: 60px;
+                }
+                #sosyalmedya{
+                    min-width: 200px;
+                    margin-top: 50px;
+                    width: 100%;
+                    margin-bottom: 50px;
+                }
+                #sosyalmedya > ul {
+                    display: inline;
+                    
+                }
+                #sosyalmedya > ul > li {
+                    display: inline;
+                }
+                #footeralt{
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                #spotifyab{
+                    padding: 10px;
+                    color: white;
+                    font-size:8px;
+                    position: relative;
+                    text-align: right;
+                    top: 8px;
+                }
+                #lastfooter{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+                #lastfooter > div > ul > li > a{
+                    font-size:8px;
+                }
+                #nav{
+                    height: 50px;
+                }
+                #navorta::after{
+                    top: 0;
+                    right: 0;
+                    content: '';
+                    width: 100%;
+                    height: 60px;
+                    position: absolute;
+                    background-color: #000000;
+                    z-index: 0;
+                    opacity: 0.5;
+                }
+                #navlinks>ul{
+                    display: flex;
+                    list-style: none;
+                    padding: 25px;
+                    height: 100%;
+                    z-index: 2;
+                    position: absolute;
+                    top: -25;
+                    }
+          }
