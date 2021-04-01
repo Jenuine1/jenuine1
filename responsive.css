@@ -212,3 +212,11 @@
                         margin-top: 50px;
                     }
           }
+
+ @media screen and (max-width:500px){
+
+            #denemebuton{
+                margin-top: 10px;
+            }
+
+          }
